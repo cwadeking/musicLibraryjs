@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "34818847-9e90-4c03-8622-9078476a7e85",
+		"name": "musicLibrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.devcodecampmusiclibrary.com/api/music",
+					"host": [
+						"www",
+						"devcodecampmusiclibrary",
+						"com"
+					],
+					"path": [
+						"api",
+						"music"
+					]
+				},
+				"description": "Get request for all of the entities in the data set"
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.devcodecampmusiclibrary.com/api/music/1",
+					"host": [
+						"www",
+						"devcodecampmusiclibrary",
+						"com"
+					],
+					"path": [
+						"api",
+						"music",
+						"1"
+					]
+				},
+				"description": "Made a request by a particular id to capture a specific entity"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
