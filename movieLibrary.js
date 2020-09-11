@@ -5,10 +5,18 @@ function pageLoad(){
         dataType: "json",
         type: "get",
         success: function(data, textStatus, jQxhr){
-            $("#tableRow").append(`<td>${data[0].title}</td>`),
-            $("#tableRow").append(`<td>${data[0].album}</td>`),
-            $("#tableRow").append(`<td>${data[0].artist}</td>`),
-            $("#tableRow").append(`<td>${data[0].genre}</td>`)                               
+        
+            for(let element = 0; element < data.length; element++){
+                    $("table").append(`<tr>
+                                    <td>${data[element].title}</td>
+                                    <td>${data[element].album}</td>
+                                    <td>${data[element].artist}</td>
+                                    <td>${data[element].genre}</td>
+                                    <td>${data[element].releaseDate}</td>
+                                </tr>`)
+                
+
+            }
         },
         error: function(jqXhr, textStatus, errorThrown){
             console.log(errorThrown);
