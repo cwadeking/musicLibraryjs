@@ -7,7 +7,7 @@ function pageLoad(){
         success: function(data, textStatus, jQxhr){
         
             for(let element = 0; element < data.length; element++){
-                    $("table").append(`<tr>
+                $("table").append(`<tr>
                                     <td>${data[element].title}</td>
                                     <td>${data[element].album}</td>
                                     <td>${data[element].artist}</td>
